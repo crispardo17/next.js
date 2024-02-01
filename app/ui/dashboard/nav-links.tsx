@@ -1,8 +1,12 @@
 'use client';
 import {
   UserGroupIcon,
-  HomeIcon,
-  DocumentDuplicateIcon,
+  InboxIcon,
+  Cog6ToothIcon,
+  InboxArrowDownIcon,
+  UserPlusIcon,
+  AcademicCapIcon,
+  HomeModernIcon,
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -11,17 +15,18 @@ import clsx from 'clsx';
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
 const links = [
-  { name: 'Requerimiento', href: '/dashboard', icon: HomeIcon },
+  { name: 'Home', href: '/dashboard', icon: InboxIcon },
+  { name: 'Requerimiento', href: '/dashboard/requerimiento', icon: InboxIcon },
   {
     name: 'Gestionar Requerimiento',
     href: '/dashboard/invoices',
-    icon: DocumentDuplicateIcon,
+    icon: InboxArrowDownIcon,
   },
-  { name: 'Selección', href: '/dashboard/customers', icon: UserGroupIcon },
+  { name: 'Selección', href: '/dashboard/customers', icon: UserPlusIcon },
   { name: 'Gestionar Selección', href: '/dashboard/gestionSeleccion', icon: UserGroupIcon },
-  { name: 'Contratación', href: '/dashboard/contratacion', icon: UserGroupIcon },
-  { name: 'Planta', href: '/dashboard/planta', icon: UserGroupIcon },
-  { name: 'Configuración', href: '/dashboard/configuracion', icon: UserGroupIcon },
+  { name: 'Contratación', href: '/dashboard/contratacion', icon: AcademicCapIcon },
+  { name: 'Planta', href: '/dashboard/planta', icon: HomeModernIcon },
+  { name: 'Configuración', href: '/dashboard/configuracion', icon: Cog6ToothIcon },
 ];
 
 export default function NavLinks() {
@@ -35,9 +40,9 @@ export default function NavLinks() {
             key={link.name}
             href={link.href}
             className={clsx(
-              'flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3',
+              'flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-blue-900 p-3 text-sm text-white font-medium hover:bg-white hover:text-blue-900 md:flex-none md:justify-start md:p-2 md:px-4',
               {
-                'bg-sky-100 text-blue-600': pathname === link.href,
+                'bg-blue-900 text-white': pathname === link.href,
               },
             )}
           >

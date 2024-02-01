@@ -6,9 +6,9 @@ import styles from '@/app/ui/home.module.css';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex min-h-screen flex-col p-3">
+    <div className={"flex min-h-screen flex-col p-2"}>
       <NavBar />
-      <div className={`${styles.shape} mt-1 flex grow flex-col gap-4 md:flex-row`}>
+      <div className={`${styles.shape} mt-2 flex grow flex-col gap-2 md:flex-row`}>
         <div className="w-full flex-none md:w-64">
           <SideNav />
         </div>
