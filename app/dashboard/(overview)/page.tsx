@@ -15,9 +15,9 @@ export default async function Page() {
 
   return (
     <main >
-      <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
-        Dashboard
-      </h1>
+      <div className="flex w-full items-center justify-between">
+        <h1 className={`${lusitana.className} text-1xl`}>Dashboard</h1>
+      </div>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         <Suspense fallback={<CardsSkeleton />}>
           <CardWrapper />

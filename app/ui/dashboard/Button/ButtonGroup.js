@@ -6,12 +6,11 @@ import CustomButtonGrande from './CustomButtonGrande';
 import styles from './button.module.css';
 
 // import CustomModal from '../Modal/CustomModal';
-// import CustomModalAsignar from '../../../api/requerimiento/ModalAsignar/CustomModalAsignar';
-// import CustomModalPoblar from '../../../api/gestionarRequerimientos/ModalPoblar/CustomModalPoblar';
-// import Swal from 'sweetalert2';
-// import withReactContent from 'sweetalert2-react-content';
 
-// const MySwal = withReactContent(Swal);
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
+
+const MySwal = withReactContent(Swal);
 
 const ButtonGroup = ({ page }) => {
   const buttonsToShow = getButtonsToShow(page);
@@ -46,13 +45,13 @@ const ButtonGroup = ({ page }) => {
       case 'gestionarReq':
       case 'anularReq':
       case 'cerrarReq':
-        // handleSweetAlert(
-        //   `¿Quieres ${buttonId
-        //     .replace('Req', '')
-        //     .toLowerCase()} el requerimiento?`,
-        //   () => console.log(buttonId.replace('Req', '')),
-        // );
-        // return;
+        handleSweetAlert(
+          `¿Quieres ${buttonId
+            .replace('Req', '')
+            .toLowerCase()} el requerimiento?`,
+          () => console.log(buttonId.replace('Req', '')),
+        );
+        return;
 
       ////////////////////////////////////////////////// Gestionar Requerimiento
       // case 'base':
@@ -98,19 +97,19 @@ const ButtonGroup = ({ page }) => {
     handleRedirect(targetUrl);
   };
 
-  // const handleSweetAlert = (title, onConfirm) => {
-  //   MySwal.fire({
-  //     title: title,
-  //     icon: 'question',
-  //     showCancelButton: true,
-  //     confirmButtonText: 'Sí',
-  //     cancelButtonText: 'Cancelar',
-  //   }).then((result) => {
-  //     if (result.isConfirmed) {
-  //       onConfirm();
-  //     }
-  //   });
-  // };
+  const handleSweetAlert = (title, onConfirm) => {
+    MySwal.fire({
+      title: title,
+      icon: 'question',
+      showCancelButton: true,
+      confirmButtonText: 'Sí',
+      cancelButtonText: 'Cancelar',
+    }).then((result) => {
+      if (result.isConfirmed) {
+        onConfirm();
+      }
+    });
+  };
 
   const handleRedirect = (targetUrl) => {
     window.location = targetUrl;
