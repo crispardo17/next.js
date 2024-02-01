@@ -2,6 +2,7 @@
 import {
   UserGroupIcon,
   InboxIcon,
+  HomeIcon,
   Cog6ToothIcon,
   InboxArrowDownIcon,
   UserPlusIcon,
@@ -15,7 +16,7 @@ import clsx from 'clsx';
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
 const links = [
-  { name: 'Home', href: '/dashboard', icon: InboxIcon },
+  { name: 'Home', href: '/dashboard', icon: HomeIcon },
   { name: 'Requerimiento', href: '/dashboard/requerimiento', icon: InboxIcon },
   {
     name: 'Gestionar Requerimiento',
