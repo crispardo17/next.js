@@ -16,7 +16,7 @@ export default async function Page() {
   return (
     <main >
       <div className="flex w-full items-center justify-between">
-        <h1 className={`${inter.className} text-1xl text-1xl border-b-2 border-blue-900 `}>Dashboard</h1>
+        <h1 className={`${inter.className} text-1xl text-1xl border-b-2 border-blue-900 `}>Calendario</h1>
       </div>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         <Suspense fallback={<CardsSkeleton />}>

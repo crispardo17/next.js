@@ -16,7 +16,7 @@
 
 }
 .btn:hover{
-    border: 2px solid #316497;
+    border: 1px solid #316497;
     background-color: white;
     color: #316497;
 }
@@ -38,7 +38,7 @@
 
 }
 .btnGra:hover{
-    border: 2px solid #316497;
+    border: 1px solid #316497;
     background-color: white;
     color: #316497;
 }
@@ -61,7 +61,7 @@
 
 }
 .btnGrande:hover{
-    border: 2px solid #316497;
+    border: 1px solid #316497;
     background-color: white;
     color: #316497;
 }
