@@ -22,7 +22,7 @@ export default function NavBar() {
       </div>
       <div className="flex flex-row text-white md:w-1/6 items-center justify-center">
         <UserCircleIcon className="w-6" />
-        <div className="hidden md:block">Usuario</div>
+        <div className="hidden md:block ml-2">Usuario</div>
       </div>
     </div>
   );

@@ -6,7 +6,8 @@
     margin: 3px 5px;
     padding: 3px 10px;
     border-radius: 14px;
-    width: 80px;
+    white-space: nowrap;
+    min-width: 80px;
     height: 37px;
     color: white;
     font-size: 12px;
@@ -20,51 +21,7 @@
     background-color: white;
     color: #316497;
 }
-.btnGra{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color:#316497;
-    margin: 3px 3px;
-    padding: 3px 6px;
-    border-radius: 14px;
-    width: 120px;
-    height: 37px;
-    color: white;
-    font-size: 12px;
-    font-weight: 400;
-    border: 1px solid #316497;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
-}
-.btnGra:hover{
-    border: 1px solid #316497;
-    background-color: white;
-    color: #316497;
-}
-
-.btnGrande{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color:#316497;
-    margin: 3px 3px;
-    padding: 3px 6px;
-    border-radius: 14px;
-    width: 150px;
-    height: 37px;
-    color: white;
-    font-size: 12px;
-    font-weight: 400;
-    border: 1px solid #316497;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
-}
-.btnGrande:hover{
-    border: 1px solid #316497;
-    background-color: white;
-    color: #316497;
-}
 
 .divBtn{
     width:98%;

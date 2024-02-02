@@ -1,7 +1,7 @@
 import Pagination from '@/app/ui/invoices/pagination';
 import Search from '@/app/ui/search';
 import Table from '@/app/ui/invoices/table';
-import ButtonGroup from '../../ui/dashboard/Button/ButtonGroup';
+import ButtonGroup from '../../../ui/dashboard/Button/ButtonGroup';
 import { CreateInvoice } from '@/app/ui/invoices/buttons';
 import { inter } from '@/app/ui/fonts';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
@@ -29,10 +29,10 @@ export default async function Page({
   return (
     <div className="w-full">
       <div className="flex w-full items-center justify-between">
-        <h1 className={`${inter.className} text-1xl text-1xl border-b-2 border-blue-900 `}>Configuración</h1>
+        <h1 className={`${inter.className} text-1xl text-1xl border-b-2 border-blue-900 `}>Campañas</h1>
       </div>
       <div className="mt-4 flex items-center justify-between gap-2 md:mt-8">
-        <div><ButtonGroup page="configuracion" /></div>
+        <div><ButtonGroup page="campana" /></div>
         <Search placeholder="Buscar" />
         <CreateInvoice />
       </div>
