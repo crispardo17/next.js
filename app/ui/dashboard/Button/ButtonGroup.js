@@ -5,7 +5,7 @@ import clsx from 'clsx';
 
 const links = [
   //Pagina Requerimientos
-  { name: 'Insertar', id: 'insertarReq', href: '/dashboard' },
+  { name: 'Insertar', id: 'insertarReq', href: '/dashboard/invoices/create' },
   { name: 'Modificar', id: 'modificarReq', href: '/dashboard' },
   { name: 'Ver', id: 'verReq', href: '/dashboard' },
   { name: 'Asignar', id: 'asignarReq', href: '/dashboard' },
@@ -17,9 +17,9 @@ const links = [
   { name: 'Cerrar Requerimiento', id: 'cerrarReq', href: '/dashboard' },
   { name: 'Kpi', id: 'kpi', href: '/dashboard' },
   //Pagina base
-  { name: 'Insertar', id: 'insertBase', href: '/dashboard' },
-  { name: 'Modificar', id: 'modificarBase', href: '/dashboard' },
-  { name: 'Ver', id: 'verBase', href: '/dashboard' },
+  // { name: 'Insertar', id: 'insertBase', href: '/dashboard' },
+  // { name: 'Modificar', id: 'modificarBase', href: '/dashboard' },
+  // { name: 'Ver', id: 'verBase', href: '/dashboard' },
   //Pagina Seleccion
   { name: 'Descartar', id: 'descartar', href: '/dashboard' },
   { name: 'Perfil Cargo', id: 'perfilCargoSel', href: '/dashboard' },
@@ -40,43 +40,43 @@ const links = [
   { name: 'Generar', id: 'generar', href: '/dashboard' },
   { name: 'Ver Contrato', id: 'verCont', href: '/dashboard' },
   { name: 'Finalizar', id: 'finalizar', href: '/dashboard' },
-  //Pagina Examenes Medicos
-  { name: 'Insertar', id: 'insExamen', href: '/dashboard' },
-  { name: 'Resultado', id: 'resultado', href: '/dashboard' },
+  // //Pagina Examenes Medicos
+  // { name: 'Insertar', id: 'insExamen', href: '/dashboard' },
+  // { name: 'Resultado', id: 'resultado', href: '/dashboard' },
   //Pagina Generar
-  { name: 'Ver', id: 'verGenerar', href: '/dashboard' },
-  { name: 'Generar', id: 'genGenerar', href: '/dashboard' },
+  // { name: 'Ver', id: 'verGenerar', href: '/dashboard' },
+  // { name: 'Generar', id: 'genGenerar', href: '/dashboard' },
   //Pagina Planta
   { name: 'Activo', id: 'activo', href: '/dashboard' },
   { name: 'Inactivo', id: 'inactivo', href: '/dashboard' },
   //Pagina Planta Activo
-  { name: 'Activo', id: 'actActivo', href: '/dashboard' },
-  { name: 'Inactivo', id: 'actActivo', href: '/dashboard' },
-  { name: 'Inactivo', id: 'cesPatronal', href: '/dashboard' },
-  //Pagina Planta Activo
+  // { name: 'Activo', id: 'actActivo', href: '/dashboard' },
+  // { name: 'Inactivo', id: 'actActivo', href: '/dashboard' },
+  // { name: 'Cesion Patronal', id: 'cesPatronal', href: '/dashboard' },
+  //Pagina Planta inaActivo
   { name: 'Inactivo', id: 'verInactivo', href: '/dashboard' },
   //Pagina configuracion
-  { name: 'Campaña', id: 'campana', href: '/dashboard' },
-  { name: 'Cargo', id: 'cargo', href: '/dashboard' },
+  { name: 'Campaña', id: 'campana', href: '/dashboard/configuracion/campanas' },
+  { name: 'Cargo', id: 'cargo', href: '/dashboard/configuracion/cargos' },
   { name: 'Perfil Cargo', id: 'perfilCargoCon', href: '/dashboard' },
   { name: 'Usuarios', id: 'usuarios', href: '/dashboard' },
   { name: 'Perfiles', id: 'perfiles', href: '/dashboard' },
   //Pagina configuracion / usuario
-  { name: 'Crear', id: 'crearUsuario', href: '/dashboard' },
-  { name: 'Editar', id: 'editUsuario', href: '/dashboard' },
-  { name: 'Ver', id: 'verUsuario', href: '/dashboard' },
+  // { name: 'Crear', id: 'crearUsuario', href: '/dashboard' },
+  // { name: 'Editar', id: 'editUsuario', href: '/dashboard' },
+  // { name: 'Ver', id: 'verUsuario', href: '/dashboard' },
   //Pagina configuracion / perfil
-  { name: 'Crear', id: 'crearPerfil', href: '/dashboard' },
-  { name: 'Editar', id: 'editPerfil', href: '/dashboard' },
-  { name: 'Ver', id: 'verPerfil', href: '/dashboard' },
+  // { name: 'Crear', id: 'crearPerfil', href: '/dashboard' },
+  // { name: 'Editar', id: 'editPerfil', href: '/dashboard' },
+  // { name: 'Ver', id: 'verPerfil', href: '/dashboard' },
   //Pagina configuracion / campaña
-  { name: 'Crear', id: 'crearCampana', href: '/dashboard' },
-  { name: 'Editar', id: 'editCampana', href: '/dashboard' },
-  { name: 'Ver', id: 'verCampana', href: '/dashboard' },
+  // { name: 'Crear', id: 'crearCampana', href: '/dashboard' },
+  // { name: 'Editar', id: 'editCampana', href: '/dashboard' },
+  // { name: 'Ver', id: 'verCampana', href: '/dashboard' },
   //Pagina configuracion / cargo
-  { name: 'Crear', id: 'crearCargo', href: '/dashboard' },
-  { name: 'Editar', id: 'editCargo', href: '/dashboard' },
-  { name: 'Ver', id: 'verCargo', href: '/dashboard' },
+  // { name: 'Crear', id: 'crearCargo', href: '/dashboard' },
+  // { name: 'Editar', id: 'editCargo', href: '/dashboard' },
+  // { name: 'Ver', id: 'verCargo', href: '/dashboard' },
   
 ];
 

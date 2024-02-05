@@ -32,7 +32,7 @@ export default async function Page({
         <h1 className={`${inter.className} text-1xl text-1xl border-b-2 border-blue-900 `}>Campañas</h1>
       </div>
       <div className="mt-4 flex items-center justify-between gap-2 md:mt-8">
-        <div><ButtonGroup page="campana" /></div>
+        <div><ButtonGroup page="campanas" /></div>
         <Search placeholder="Buscar" />
         <CreateInvoice />
       </div>
